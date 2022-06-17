@@ -4,74 +4,96 @@
 }
 body{
     background-color: black;
+    padding: 1em;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 400, 500, 600, 700;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: small;
 }
 main{
-    background-color: rgb(231, 122, 127);
-    background-image: url("bg-intro-desktop.png");
-    width: 60%;
-    margin: auto;
-    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(bg-intro-desktop.png);
+    height: 100%;
     background-size: cover;
-    padding: 100px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(0, 100%, 74%);
+    padding: 10%;
+    margin: 10%;
+    color: white;
+    font-family: "poppins", sans-serif;
 }
 .right{
-    margin: auto;
-    padding: 20px;
     color: white;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
 }
-.right h3{
-    margin-bottom: 10px;
+.right p {
+    margin-top: 10px;
+    font-size: small;
     
 }
 .trial{
     background-color: hsl(248, 32%, 49%);
     color: white;
-    box-sizing: border-box;
     border-radius: 5px;
-    margin: 50px;
-    padding: 10px;
-    width: 100%;
+    padding: 2px;
+    text-align: center;
 }
 .trial p{
     margin:  auto;
     text-align: center;
+    font-size: small;
+    padding: 10px;
 }
 .form {
     background-color: white;
     box-sizing: border-box;
     border-radius: 5px;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    margin-top: 10px;
+    min-height: 2em;
 }
-.fname{
+.form input{
     border-radius: 5px;
-    margin: 5px;
-    width: 80%;   
-}
-.lname{
-    border-radius: 5px;
-    margin: 5px;
+    margin-top: 20px;
     width: 80%;
-}
-#email{
-    border-radius: 5px;
-    margin: 5px;
-    width: 80%;
-}
-.password{
-    border-radius: 5px;
-    margin: 5px;
-    width: 80%;
+    min-height: 2em;
+    margin-left: 30px;
 }
 .btn{
     border-radius: 5px;
-    margin: 5px;
+    margin: 30px 30px;
     width: 80%;
     background-color: hsl(154, 59%, 51%);
+} 
+.tc-text{
+    color: gray;
+    font-size: xx-small;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0;
+}
+span{
+    color: red;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 375px) {
+ main{
+        display: grid;
+        grid-template-columns:none;
+        margin:none;
+    }
+.right{
+        text-align: center;
+}
+    
 }
